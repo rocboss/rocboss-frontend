@@ -1,0 +1,87 @@
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #F8F9FA;
+  color: #77838F;
+}
+
+.left-bar, .right-bar {
+  width: 100%;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #e7eaf3;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1.2rem rgba(189, 197, 209, 0.2);
+  overflow: hidden;
+}
+
+.left-bar:not(:first-child), .right-bar:not(:first-child) {
+  margin-top: 10px;
+}
+
+.left-auto-wrap {
+  max-width: 270px;
+}
+
+.clearfix{  
+  *zoom:1;
+}
+.clearfix:after{  
+  content: "";  
+  display: block;  
+  clear: both;  
+}  
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.ivu-row {
+  width: 100%;
+}
+
+.ivu-layout-header {
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(151, 164, 175, .1);
+  padding: 0;
+}
+
+.ivu-layout-footer {
+  background: transparent;
+  padding: 24px 0;
+}
+
+.page-enter-active, .page-leave-active {
+  /* transition: opacity .5s; */
+}
+
+.page-enter, .page-leave-active {
+  /* opacity: 0; */
+}
+
+.video-js button {
+    outline: 0!important;
+}
+.video-js .vjs-big-play-button {
+    top: calc(50% - .75em)!important;
+    left: calc(50% - 1.5em)!important;
+}
+
+@media screen and (max-device-width:991px) {
+  .left-auto-wrap {
+      max-width: 400px;
+      margin: 0 auto;
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "root": true,
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "plugins": ["html"],
+    "rules": {
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "object-curly-spacing": [0, "never"],
+        "padded-blocks": 0,
+        "no-console": ["error"]
+    }
+}
