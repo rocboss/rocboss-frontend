@@ -17,7 +17,7 @@
     <div class="post-item-content">
       <!-- 用户 -->
       <div class="post-item-content-header">
-        <router-link :to="'/user/' + post.user.username">
+        <router-link :to="'/post/' + post.alias_id">
           <span class="nickname">{{ post.user.username }}</span>
         </router-link>
         <span class="time">{{ post.created_at }}</span>
